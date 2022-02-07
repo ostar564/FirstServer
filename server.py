@@ -21,6 +21,8 @@ def upload():
     return render_template('upload.html')
 #route index page to root of web site
 @app.route('/', methods = ['POST', 'GET'])
+
+
 def index():
     if request.method == 'POST':
         #ADD TASK button clicked
@@ -45,4 +47,3 @@ def index():
 if __name__== "__main__":
     #start running the web page
     app.run(debug=True)
-
